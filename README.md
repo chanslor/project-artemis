@@ -2,7 +2,7 @@
 
 <div align="center">
     <img src="rocket.png" alt="Rocket Image" width="50%">
-    <img src="ollama.png" alt="Ollama Image" width="50%">
+    <img src="ollama.png" alt="Ollama Image" width="20%">
 </div>
 
 
