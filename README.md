@@ -1,8 +1,29 @@
-<h1 align="center"> Project Artemis </h1> <br>
-<p align="center">
-    <img src="rocket.png" width="450">
-  </a>
-</p>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .image-container {
+            display: flex;
+            justify-content: center;
+        }
+        .image-container img {
+            margin: 0 10px; /* Adjust spacing between images */
+        }
+    </style>
+</head>
+<body>
+    <h1>Project Artemis</h1>
+    <div class="image-container">
+        <img src="rocket.png" alt="Rocket Image">
+        <img src="ollama.png" alt="Ollama Image">
+    </div>
+</body>
+</html>
+
+
+
+
+
 
 #This project started as Carli's hope.
 #I'm creating an AI named Artemis
