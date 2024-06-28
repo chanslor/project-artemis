@@ -1,8 +1,8 @@
 # Project Artemis
 
 <div align="center">
+    <img src="ollama.png" alt="Ollama Image" width="15%">
     <img src="rocket.png" alt="Rocket Image" width="50%">
-    <img src="ollama.png" alt="Ollama Image" width="10%">
 </div>
 
 # Project Artemis: Carli's Hope
