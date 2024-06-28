@@ -4,7 +4,7 @@
   </a>
 </p>
 
-#I'm call ing this project Carli's hope.
+#This project started as Carli's hope.
 #I'm creating an AI named Artemis
  
 #System: Fedora freaking Linux of course. FC40
