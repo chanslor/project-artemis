@@ -1,8 +1,8 @@
 # Project Artemis
 
 <div align="center">
-    <img src="rocket.png" alt="Rocket Image">
-    <img src="ollama.png" alt="Ollama Image">
+    <img src="rocket.png" alt="Rocket Image" width="50%">
+    <img src="ollama.png" alt="Ollama Image" width="50%">
 </div>
 
 
