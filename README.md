@@ -26,14 +26,14 @@ OLLAMA caught our attention—it's like a Docker engine, but with a twist. Here'
     curl -fsSL https://ollama.com/install.sh | sh
     ```
 
-2. Manual startup (for debugging):
+2. SystemD start up in the end.
     ```bash
     systemctl status ollama
     systemctl enable ollama
     systemctl start ollama
     ```
 
-3. Start the server manually:
+3. Starting the server manually for debugging:
     ```bash
     OLLAMA_HOST=192.168.1.63:11435 ollama serve
     ```
@@ -46,4 +46,25 @@ OLLAMA caught our attention—it's like a Docker engine, but with a twist. Here'
 ```bash
 OLLAMA_HOST=192.168.1.63:11435 ollama run chand1012/rocket
 ```
+
+# Setting Up open-webui
+
+Let's add some flair to our project with open-webui:
+
+1. Run the container:
+    ```bash
+    docker run -d --network=host -e OLLAMA_API_BASE_URL=http://localhost:11434/api --name ollama-webui --restart always ollama-webui
+    ```
+
+2. Access the web interface:
+    - URL: localhost:3000
+    - Admin credentials: `admin@localhost` (password: a few seconds ago)
+
+## Troubleshooting
+If you encounter authentication issues, bypass them:
+```bash
+docker run --env WEBUI_AUTH=False -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+```
+
+Remember, Artemis is watching over us! 🌙✨
 
