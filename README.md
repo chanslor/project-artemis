@@ -1,3 +1,9 @@
+<h1 align="center"> Project Artemis </h1> <br>
+<p align="center">
+    <img src="rocket.png" width="450">
+  </a>
+</p>
+
 #I'm call ing this project Carli's hope.
 #I'm creating an AI named Artemis
  
@@ -8,6 +14,8 @@
 # Run Rocket LLM AI model 
 # Install open-webui on top for all the rich freaking features.
 
+
+# Setup OLLAMA
 
 #I've notice that ollams is kinda like a Docker engine.
 #This command not only downloaded ollama and installed, but setup my laptop to have a differnet Nvida driver, which is kicking and much better.
@@ -45,6 +53,8 @@ OLLAMA_HOST=192.168.1.63:11435 ollama run chand1012/rocket
 
  http://localhost:3000/api/v1/
 
+
+# Setup open-webui
 
 docker run -d --network=host -e OLLAMA_API_BASE_URL=http://localhost:11434/api --name ollama-webui --restart always ollama-webui
 
